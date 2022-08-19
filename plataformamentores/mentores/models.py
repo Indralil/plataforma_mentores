@@ -6,9 +6,10 @@ from django.db import models
 class Mentor(models.Model):
     
     nombre = models.CharField (max_length=50)
-    apellido = models.CharField (max_length=500)
+    primer_apellido = models.CharField (max_length=500)
     email = models.EmailField (max_length=100, unique=True)
     ciudad_residencia = models.CharField (max_length=50)
+    linkedln = models.URLField (null=False, blank=False)
     
 
     class Meta:
