@@ -10,6 +10,7 @@ class Mentor(models.Model):
     email = models.EmailField (max_length=100, unique=True)
     ciudad_residencia = models.CharField (max_length=50)
     linkedln = models.URLField (null=False, blank=False)
+    agenda = models.FileField ()
     
 
     class Meta:
